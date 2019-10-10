@@ -43,7 +43,7 @@ var Player = function() {
 //function for detecting collision with enemy
 Player.prototype.isCollided = function() {
     for (let enemy of allEnemies) {
-        if((Math.abs(this.x-enemy.x) < XVAL/2) && ((this.y-enemy.y) === 0)) {
+        if((Math.abs(this.x-enemy.x) < (XVAL-23)) && ((this.y-enemy.y) === 0)) {
             return true;
         }
     }
